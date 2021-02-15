@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="https://kit.fontawesome.com/412d33e412.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="blogBody">
+  <!-- Header Start -->
+  <header class="blogHeader">
+    <div class="blogHeaderFlex wrapper">
+      <div class="blogHeaderNav">
+        <h3 class="blogLogo"><a href="./index.html">SANCTUARY HELPERS</a></h3>
+        <nav>
+          <label for="toggleBlog">
+            <i class="fas fa-bars hamburgerMenu"></i>
+          </label>
+          <input id="toggleBlog" name="toggleBlog" type="checkbox" class="sr-only">
+          <ul class="blogNav">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h1>BLOG</h1>
+    </div>
+  </header>
+  <!-- Header end -->
+  <main>
+
+    <!-- Blog Post Start -->
+    <section class="blogSection">
+      <div class="blogPost">
+        <div class="blogImage">
+          <img src="./assets/blog-post-image.jpg" alt="Turquoise day bed." />
+        </div>
+        <div class="blogTextContainer">
+          <div class="blogText">
+            <h2>FINDING THE RIGHT PIECES FOR NEW SPACE</h2>
+            <p>Monday, October 5th, 2019 by <span>Saron</span></p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              nostrum ipsa, molestias quod, alias est repudiandae natus non
+              impedit pariatur consectetur aperiam minus iure sit mollitia quo
+              necessitatibus quis cum? Eum ab nulla voluptas odit minima maiores
+              similique earum deserunt a! Officia suscipit esse velit pariatur,
+              facilis fugit quasi unde architecto iusto porro provident
+              perferendis ullam vel, molestias natus autem. Beatae explicabo sit.
+            </p>
+            <p>
+              Saepe asperiores dignissimos soluta rerum a ut quod rem fuga
+              impedit debitis consequatur mollitia obcaecati tenetur at ab
+              deleniti quia ea iure, neque delectus odio. Eius, voluptatibus!
+              Officia, magni quibusdam! Fuga repudiandae adipisci ratione
+              voluptates impedit libero facilis reprehenderit placeat! Quos
+              mollitia reiciendis quisquam, possimus dolor iure deserunt rem
+              illum temporibus vel nostrum! Ratione blanditiis aliquid
+              laboriosam.
+
+            </p>
+            <p>
+              Facilis fugit quasi unde architecto iusto porro provident
+              perferendis ullam vel, molestias natus autem. Beatae explicabo sit
+              saepe asperiores dignissimos soluta rerum a ut quod rem fuga
+              impedit debitis consequatur mollitia obcaecati tenetur at ab
+              deleniti quia ea iure, neque delectus odio. Eius, voluptatibus!
+              Officia, magni quibusdam! Fuga repudiandae adipisci ratione
+              voluptates impedit libero facilis reprehenderit placeat! Quos
+              mollitia reiciendis quisquam, possimus dolor iure deserunt rem
+              illum temporibus vel nostrum! Ratione blanditiis aliquid
+              laboriosam.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- Blog Post End -->
+      <!-- Blog Aside Start -->
+      <div class="blogAside">
+        <div>
+          <img src="./assets/sidebar-image.jpg" alt="Geometric, copper light fixture" />
+        </div>
+        <div class="blogAsideText1">
+          <h3>OUR MISSION</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis similique ipsa optio.
+          </p>
+        </div>
+        <div class="blogAsideText2">
+          <h3>RECENT POSTS</h3>
+          <ul>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Aside End -->
+    <!-- Blog Comments Start -->
+    <section class="comments">
+      <div class="commentFlex">
+        <div class="commentContainer">
+          <h3>COMMENTS:</h3>
+          <div class="commentBoxText">
+            <div class="commentImageFlex">
+              <img src="./assets/comment-image.jpg" alt="Portrait of a man." />
+            </div>
+
+            <div class="commentTextFlex">
+              <p>TUESDAY OCTOBER 9TH, 2019 BY DAVIN</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+                debitis rerum rem, amet, ad corrupti provident, non earum eos quos
+                fugiat aperiam eum eaque cupiditate. Veniam natus temporibus
+                dolores sit?
+              </p>
+            </div>
+          </div>
+
+          <div class="commentBoxText">
+            <div class="commentImageFlex">
+              <img src="./assets/comment-image2.jpg" alt="Two zebras" />
+            </div>
+
+            <div class="commentTextFlex">
+              <p>WEDNESDAY OCTOBER 10TH, 2019 BY LISA</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+                debitis rerum rem, amet, ad corrupti provident, non earum eos quos
+                fugiat aperiam eum eaque cupiditate. Veniam natus temporibus
+                dolores sit?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Comments End -->
+    <!-- Blog Comment Form Start -->
+    <section class="form wrapper">
+      <div class="blogForm">
+        <form action="submit">
+          <fieldset class="blogFormFlex">
+            <legend class="sr-only">Comment Form</legend>
+            <div class="formFlex1">
+              <div class="nameFlex">
+                <label for="name" class="name">Name</label>
+                <input type="text" name="name" id="name" class="name" />
+              </div>
+
+              <div class="emailFlex">
+                <label for="email" class="email">Email Address</label>
+                <input type="email" name="email" id="email" class="email" />
+              </div>
+            </div>
+            <div class="formFlex2">
+              <label for="comment" class="sr-only">Comment</label>
+              <textarea name="comment" id="comment" class="comment" cols="30" rows="10"
+                placeholder="COMMENT"></textarea>
+              <button>
+                <h4>POST COMMENT</h4>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- Blog Comment Form End -->
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>Copyright &#169; 2021 Juno</p>
+  </footer>
+</body>
+
+</html>

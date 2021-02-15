@@ -1,0 +1,301 @@
+
+// General styles
+
+.blogBody {
+  background-color: $mint;
+}
+
+// Blog header
+
+.blogHeader {
+  height: 70vh;
+  min-height: 400px;
+  max-height: 500px;
+  background: url(../assets/blog-image.jpg) center / cover;
+  position: relative;
+}
+
+.blogHeaderFlex {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin-top: 100px;
+  }
+}
+
+.hamburgerMenu {
+  font-size: 5rem;
+  align-self: center;
+  position: fixed;
+  z-index: 10;
+  top: 43px;
+  right: 40px;
+  display: none;
+  opacity: 0;
+}
+
+.blogHeaderNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 400px;
+
+  .blogLogo {
+    width: 200px;
+    min-width: 150px;
+    margin-top: 10px;
+    a {
+      color: $black;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    min-width: 400px;
+  }
+}
+
+// Blog section
+
+.blogSection {
+  display: flex;
+
+  .blogPost {
+    background-color: $offWhite;
+    min-width: 65%;
+    box-shadow: 10px 10px 0 5px $yellow;
+  }
+
+  .blogImage img {
+    width: 100%;
+    position: relative;
+    top: -120px;
+    box-shadow: 10px 15px 0 5px $yellow;
+  }
+
+  .blogText {
+    width: 650px;
+    position: relative;
+    top: -80px;
+    margin: 20px;
+    min-height: 1200px;
+  }
+}
+
+.blogAside {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 75%;
+
+  ul {
+    padding-left: 15px;
+  }
+  img {
+    box-shadow: -10px 10px 0 5px $yellow;
+    width: 320px;
+  }
+
+  .blogAsideText1,
+  .blogAsideText2 {
+    background-color: $yellow;
+    width: 335px;
+    padding: 20px;
+  }
+
+  h3 {
+    padding-bottom: 15px;
+  }
+
+  .blogNav {
+    margin-left: 20px;
+  }
+
+  li {
+    list-style-type: disc;
+    font-size: 2rem;
+  }
+
+  li a {
+    color: $black;
+
+    &:hover {
+      color: lighten($black, 30%);
+    }
+  }
+}
+
+.blogTextContainer {
+  display: flex;
+  justify-content: flex-end;
+  height: 1200px;
+}
+
+.blogText {
+  padding-right: 50px;
+
+  p {
+    margin-bottom: 35px;
+  }
+
+  h2 + p {
+    margin-top: 35px;
+    font-style: italic;
+  }
+
+  span {
+    font-weight: bolder;
+  }
+}
+
+.blogAsideText2 li a {
+  @include bodyText(2rem);
+}
+
+
+.commentFlex {
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 80px;
+  margin-bottom: 25px;
+
+
+  .commentContainer {
+    width: 650px;
+    margin: 0 20px;
+  }
+
+  .commentBoxText {
+    display: flex;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+
+  .commentTextFlex {
+    margin-left: 20px;
+
+    p:first-of-type {
+      font-weight: bolder;
+    }
+  }
+}
+
+.commentContainer h3 + .commentBoxText {
+  margin-bottom: 50px;
+}
+
+// comment form
+
+.blogForm {
+ 
+  width: 65%;
+  display: flex;
+  margin: 0 20px;
+  justify-content: flex-end;
+
+  input {
+    border: none;
+    background: $mint;
+  }
+
+  fieldset {
+    
+    border: none;
+    width: 650px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .formFlex1 {
+    
+    height: 75px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 0;
+
+    label {
+      position: absolute;
+      top: -7px;
+      margin-left: 20px;
+
+      @include bodyText(1.5rem);
+      text-transform: uppercase;
+    }
+
+    .emailFlex,
+    .nameFlex {
+      width: 47%;
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 2px solid $everGreen;
+        @include bodyText(1.5rem);
+      }
+    }
+  }
+
+  .formFlex2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 0;
+    
+
+    textarea {
+      min-width: 650px;
+      max-width: 650px;
+      min-height: 200px;
+      max-height: 200px;
+      padding: 20px;
+      background-color: $mint;
+      border: 2px solid $everGreen; 
+      resize: none;
+
+      @include bodyText(1.5rem);
+    }
+
+    button {
+      @include linkButton();
+      border: none;
+      width: 100%;
+      margin-top: 20px;
+      height: 35px;
+    }
+  }
+}
+
+textarea::placeholder {
+  @include bodyText(1.5rem);
+  text-transform: uppercase;
+}
+
+// footer
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: $black;
+
+  p {
+    color: $offWhite;
+    padding: 10px 0;
+    font-size: 1.5rem;
+  }
+}

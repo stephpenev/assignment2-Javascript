@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="https://kit.fontawesome.com/412d33e412.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="contactBody">
+  <!-- Header start -->
+  <header class="contactHeader">
+    <div class="contactHeaderFlex wrapper">
+      <div class="contactHeaderNav">
+        <h3 class="contactLogo"><a href="./index.html">SANCTUARY HELPERS</a></h3>
+        <nav>
+          <label for="toggleBlog">
+            <i class="fas fa-bars hamburgerMenu"></i>
+          </label>
+          <input id="toggleBlog" name="toggleBlog" type="checkbox" class="sr-only" />
+          <ul class="contactNav">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h1>GET IN TOUCH</h1>
+    </div>
+  </header>
+  <!-- Header end -->
+  <main>
+    <!-- Wrapper start -->
+    <!-- Contact Form start -->
+    <section class="wrapper contactFlex">
+      <div class="contactForm">
+        <form action="submit">
+          <fieldset class="contactFormFlex">
+            <legend class="sr-only">Comment Form</legend>
+            <div class="contactFormFlex1">
+              <div class="contactNameFlex">
+                <label for="contactName" class="contactName">Name</label>
+                <input type="text" name="contactName" id="contactName" class="contactName" />
+              </div>
+              <div class="contactEmailFlex">
+                <label for="contactEmail" class="contactEmail">Email Address</label>
+                <input type="email" name="contactEmail" id="contactEmail" class="contactEmail" />
+              </div>
+            </div>
+            <div class="contactFormFlex2">
+              <label for="message" class="sr-only">Message</label>
+              <textarea name="message" id="message" class="message" cols="30" rows="10"
+                placeholder="MESSAGE"></textarea>
+              <button>
+                <h4>SUBMIT</h4>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <!-- Contact Form end -->
+      <!-- Contact Info start -->
+      <div class="contactInfo">
+        <div class="socialIcons" aria-label="Social media icons">
+          <a href="#facebook"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
+          <a href="#instagram"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+          <a href="#twitter"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+          <a href="#whatsapp"><i class="fab fa-whatsapp" aria-label="Whatsapp"></i></a>
+        </div>
+        <a href="#email" class="contactEmailAddress">
+          <p>info@email.com</p>
+        </a>
+        <div class="address">
+          <p>123-456-7890</p>
+          <p>123 Queen Street West, Unit 10</p>
+          <p>Toronto, Ontario</p>
+          <p>M5V 2D5</p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Info end -->
+    <!-- Wrapper end -->
+  </main>
+  <footer>
+    <p>Copyright &#169; 2021 Juno</p>
+  </footer>
+</body>
+
+</html>

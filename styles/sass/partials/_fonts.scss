@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@300;400;700&display=swap");
+
+// KUMAR ONE OUTLINE
+@mixin mainHeading($sizeValue) {
+  font-size: $sizeValue;
+  color: $black;
+  font-family: "Kumar One Outline", sans-serif;
+  font-weight: regular;
+  line-height: 6.4rem;
+}
+
+// KUMAR SOLID
+@mixin subHeading($sizeValue) {
+  font-size: $sizeValue;
+  color: $black;
+  font-family: "Kumar One", sans-serif;
+  font-weight: regular;
+  line-height: 5.8rem;
+  letter-spacing: 2.1px;
+}
+
+// LATO BOLD
+@mixin navBar($sizeValue) {
+  font-size: $sizeValue;
+  color: $black;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 1.4px;
+}
+
+// LATO REGULAR
+@mixin bodyText($sizeValue) {
+  font-size: $sizeValue;
+  color: $black;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 3.2rem;
+}
+
+// LINK
+
+@mixin linkButton() {
+  margin-top: 10px;
+  padding-top: 1%;
+  @include subHeading(1.5rem);
+  background-color: $everGreen;
+  color: $offWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 50px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $offWhite;
+    border: 3px solid $everGreen;
+    color: $everGreen;
+  }
+}
