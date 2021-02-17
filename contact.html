@@ -55,12 +55,20 @@
               <label for="message" class="sr-only">Message</label>
               <textarea name="message" id="message" class="message" cols="30" rows="10"
                 placeholder="MESSAGE"></textarea>
-              <button>
+              <button id="submitButton">
                 <h4>SUBMIT</h4>
               </button>
             </div>
           </fieldset>
         </form>
+        <div id="modalBox">
+          <div class="modalContent">
+            <span class="closeX">&times;</span>
+            <p class="modalHeader">Thank you for your inquiry!</p>
+            <p class="modalText">A team member will respond within 24 hours.</p>
+            <button id="buttonClose">Got it, now let me look at more furniture!</button>
+          </div>
+        </div>
       </div>
       <!-- Contact Form end -->
       <!-- Contact Info start -->
@@ -88,6 +96,8 @@
   <footer>
     <p>Copyright &#169; 2021 Juno</p>
   </footer>
+
+  <script src="./script/script.js"></script>
 </body>
 
 </html>

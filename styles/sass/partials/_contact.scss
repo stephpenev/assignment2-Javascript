@@ -193,6 +193,75 @@ textarea::placeholder {
   padding-top: 20px;
 }
 
+// Hidden when active class is not applied
+#modalBox {
+  position: absolute;
+  visibility: hidden;
+  background-color: $mint;
+  border: 5px solid $everGreen;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .modalHeader {
+      font-weight: 700;
+      font-size: 2.2rem;
+    }
+
+    .modalText {
+      text-align: center;
+      padding: 12px;
+    }
+
+    .closeX {
+      color: $black;
+      align-self: flex-end;
+      position: relative;
+      top: -5px;
+      right: -5px;
+      font-size: 3rem;
+      margin-bottom: 5px;
+      font-weight: 700;
+
+      &:hover,
+      &:focus {
+        color: $everGreen;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+
+    #buttonClose {
+      font-family: "Lato", sans-serif;
+      font-size: 1.5rem;
+      margin: 5px;
+      padding: 10px;
+      background-color: $everGreen;
+      color: $offWhite;
+      width: auto;
+      height: auto;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: $offWhite;
+        border: 2px solid $everGreen;
+        color: $everGreen;
+      }
+    }
+  }
+}
+
 // footer
 
 footer {

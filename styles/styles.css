@@ -1501,6 +1501,87 @@ textarea::placeholder {
   padding-top: 20px;
 }
 
+#modalBox {
+  position: absolute;
+  visibility: hidden;
+  background-color: #E0FDDF;
+  border: 5px solid #065635;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#modalBox .modalContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modalBox .modalContent .modalHeader {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+#modalBox .modalContent .modalText {
+  text-align: center;
+  padding: 12px;
+}
+
+#modalBox .modalContent .closeX {
+  color: #151514;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  top: -5px;
+  right: -5px;
+  font-size: 3rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+#modalBox .modalContent .closeX:hover, #modalBox .modalContent .closeX:focus {
+  color: #065635;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalBox .modalContent #buttonClose {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 10px;
+  background-color: #065635;
+  color: #F5F5F5;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+#modalBox .modalContent #buttonClose:hover, #modalBox .modalContent #buttonClose:focus {
+  background-color: #F5F5F5;
+  border: 2px solid #065635;
+  color: #065635;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
